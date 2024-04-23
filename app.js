@@ -14,6 +14,10 @@ function div(a,b){
 
 console.log(Ryan(10,20));
 
+var resultado = mult(8, 10);
+
+console.log(resultado)
+
 
 
 
