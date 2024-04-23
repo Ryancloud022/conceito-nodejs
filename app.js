@@ -1,4 +1,4 @@
- var Ryan = require("./calculadora");
+var ryan = require("./calculadora");
 
 function mult(a,b){
     return a * b;
@@ -12,7 +12,7 @@ function div(a,b){
     return a/b;
 }
 
-console.log(Ryan(10,20));
+console.log(ryan(10,20));
 
 var resultado = mult(8, 10);
 
@@ -50,4 +50,3 @@ console.log("E eu estou aprendendo Node.js com Guia do programador ");
 if(mostrarSite){ // Se mostrar site 
     console.log(site); // Printe o site 
 } */ 
-
