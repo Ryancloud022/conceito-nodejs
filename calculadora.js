@@ -13,10 +13,15 @@ function sub(a,b){
     return a/b;
  } 
 
+ function nomeClasse(){
+    return "Calculadora Gabriel";
+ }
+
 
 module.exports = {
   soma,
   mult,
   sub,
-  div
+  div,
+  nomeClasse
 };
