@@ -1,26 +1,11 @@
-var ryan = require("./calculadora");
+var calculadora = require("./calculadora");
 
-function mult(a,b){
-    return a * b;
-}
+calculadora.soma(20,40);
 
-function sub (a,b){
-    return a-b;
-}
-
-function div(a,b){
-    return a/b;
-}
-
-console.log(ryan(10,20));
-
-var resultado = mult(8, 10);
-
-console.log(resultado)
-
-
-
-
+console.log(calculadora.mult(10,20));
+console.log(calculadora.soma(20,40));
+calculadora.nome = "Calculadora do Ryan!"
+console.log(calculadora.nome);
 
 
 
