@@ -10,23 +10,6 @@ console.log(calculadora.nome);
 console.log(calculadora.nomeClasse);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*var mostrarSite = true;
 const site = "www.guiaprogramador.com";
 
