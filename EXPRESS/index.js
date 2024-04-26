@@ -7,13 +7,22 @@ app.get("/",function(req,res){
      res.send("</h1>Olá tudo bem?</h1>");
 });
 
-app.get("/blog",function(req, res){
-     res.send("Olá Bem Vindo ao blog");
+app.get("/blog/:artigo?",function(req, res){
+
+  var artigo = req.params.artigo;
+
+  if(artigo){
+      res.send("<h2>Artigo:" + artigo + "</h2>");
+  }else{
+      res.send("Olá Bem Vindo ao blog");
+
+  }
+
 })
 
 app.get("/canal/youtuber", function(req,res){
      res.send("<h3>Bem Vindo ao Meu Canal!</h3>");
-    });
+    })
 
 app.get("/ola/:nome/:empresa", function(req, res){
        // REQ => DADOS ENVIADOS PELO USUÁRIO
