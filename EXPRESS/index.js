@@ -21,7 +21,17 @@ app.get("/blog/:artigo?",function(req, res){
 })
 
 app.get("/canal/youtuber", function(req,res){
-     res.send("<h3>Bem Vindo ao Meu Canal!</h3>");
+     var canal = req.query["canal"];
+
+     if(canal){
+          res.send(canal);
+
+     }else{
+          res.send("Nenhum canal fornecido!")
+     }
+  
+
+
     })
 
 app.get("/ola/:nome/:empresa", function(req, res){
